@@ -2,10 +2,11 @@
 def uppercase(str):
     x = len(str)
     for i in range(0, x):
-        if (str[i].islower()):
-            c = ord(str[i]) - 32
-        else:
-            c = str[i]
+        if (ord(c) > 96) and (ord(c) < 113):
+            if (str[i].islower()):
+                c = ord(str[i]) - 32
+            else:
+                c = str[i]
         if (i != x-1):
             print("{one}".format(one=chr(c)), end='')
         else:
