@@ -2,7 +2,7 @@
 def uppercase(str):
     x = len(str)
     for i in range(0, x):
-        if (str[i].islower() and (ord(c) > 96) and (ord(c) < 113)):
+        if (ord(str[i]) > 96) and (ord(str[i]) < 113):
             c = ord(str[i]) - 32
         else:
             c = str[i]
