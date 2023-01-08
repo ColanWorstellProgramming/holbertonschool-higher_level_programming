@@ -4,8 +4,6 @@ def uppercase(str):
     for i in range(0, x):
         if (str[i].islower()):
             c = ord(str[i]) - 32
-        elif (ord(str[i]) == 32):
-            c = ord(str[i]) 
         else:
             c = str[i]
         if (i != x-1):
