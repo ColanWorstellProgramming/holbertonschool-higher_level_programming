@@ -9,4 +9,4 @@ def uppercase(str):
         if (i != x):
             print("{one}".format(one=chr(c)), end='')
         else:
-            print("{one}".format(one=chr(c)), end='\n')
+            print("{one}\n".format(one=chr(c)))
