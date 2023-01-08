@@ -4,6 +4,6 @@ def uppercase(str):
     for i in range(0, x):
         if (str[i].islower()):
             c = ord(str[i]) - 32
-            print("{one}".format(one=c), end='')
+            print("{one}".format(one=chr(c)), end='')
         else:
             print("{one}".format(one=str[i]), end='')
