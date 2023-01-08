@@ -5,8 +5,8 @@ num = int(repr(number)[-1])
 if (number < 0):
     num = -num
 if (num > 5):
-    print(f'Last digit of', number, 'is', num, 'and is greater than 5')
+    print('Last digit of', number, 'is', num, 'and is greater than 5')
 elif (num == 0):
-    print(f'Last digit of', number, 'is', num, 'and is 0')
+    print('Last digit of', number, 'is', num, 'and is 0')
 elif (num < 6):
-    print(f'Last digit of', number, 'is', num, 'and is less than 6 and not 0')
+    print('Last digit of', number, 'is', num, 'and is less than 6 and not 0')
