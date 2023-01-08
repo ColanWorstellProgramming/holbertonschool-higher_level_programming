@@ -7,7 +7,7 @@ def uppercase(str):
                 c = ord(str[i]) - 32
             else:
                 c = str[i]
-        if (i != x-1):
-            print("{one}".format(one=chr(c)), end='')
-        else:
-            print("{one}".format(one=chr(c)), end='\n')
+            if (i != x-1):
+                print("{one}".format(one=chr(c)), end='')
+            else:
+                print("{one}".format(one=chr(c)), end='\n')
