@@ -7,6 +7,6 @@ def uppercase(str):
         else:
             c = str[i]
         if (i != x):
-            print("{one}".format(one=chr(c)), end='\n')
+            print("{one}".format(one=chr(c)), end='')
         else:
             print("{one}".format(one=chr(c)), end='\n')
