@@ -14,5 +14,5 @@ else:
         val = sys.argv[i]
         if (amount == 1):
             print('{}: {}'.format(i, val))
-        elif (amount > 2):
+        elif (amount > 1):
             print('{}: {}'.format(i, val))
