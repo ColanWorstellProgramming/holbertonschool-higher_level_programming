@@ -3,7 +3,8 @@ def safe_print_division(a, b):
     x = 0
     try:
         x = a / b
+        str = '{}'.format(x)
     except ZeroDivisionError:
-        print('{}'.format('None'))
+        str = 'None'
     finally:
-        print('Inside result: {}'.format(x))
+        print('{} {}'.format(str))
