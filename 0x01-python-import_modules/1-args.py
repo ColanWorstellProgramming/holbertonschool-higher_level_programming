@@ -12,5 +12,5 @@ else:
 
     for i in range(1, amount):
         val = sys.argv[i]
-        if (amount > 1):
+        if (amount > 0):
             print('{}: {}'.format(i, val))
