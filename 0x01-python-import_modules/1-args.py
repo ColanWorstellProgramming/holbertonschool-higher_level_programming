@@ -10,6 +10,9 @@ elif (amount == 2):
 else:
     print('{} arguments:'.format(amount-1))
 
+if (amount == 0):
+    print('{}: {}'.format(0, sys.argv[0]))
+
     for i in range(1, amount):
         val = sys.argv[i]
         print('{}: {}'.format(i, val))
