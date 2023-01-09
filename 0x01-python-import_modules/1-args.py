@@ -6,8 +6,8 @@ if __name__ == '__main__':
     for i in range(1, amount):
         val = sys.argv[i]
         if (amount == 1):
-            print('{} argument:\n{}: {}'.format(amount, i+1, val))
+            print('{} argument:\n{}: {}'.format(amount, i, val))
         elif (amount > 1):
-            print('{} arguments:\n{}: {}'.format(amount, i+1, val))
+            print('{} arguments:\n{}: {}'.format(amount, i, val))
         else:
             print('{} arguments.\n'.format(amount))
