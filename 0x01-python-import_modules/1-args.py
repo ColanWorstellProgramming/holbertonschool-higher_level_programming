@@ -12,7 +12,7 @@ else:
 
     for i in range(1, amount):
         val = sys.argv[i]
-        if (amount == 2):
+        if (amount == 1):
             print('{}: {}'.format(i, val))
-        elif (amount > 3):
+        elif (amount > 2):
             print('{}: {}'.format(i, val))
