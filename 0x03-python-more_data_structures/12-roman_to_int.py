@@ -1,10 +1,10 @@
-def roman_to_int(self, s: str) -> int:
+def roman_to_int(roman_string) -> int:
     val = {'I':1, "V":5, "X":10, "L":50, "C":100, "D":500, "M":1000}
     var = 0
 
-    for i in range(len(s)):
-        if i+1 < len(s) and val[s[i]] < val[s[i+1]]:
-            var -= val[s[i]]
+    for i in range(len(roman_string)):
+        if i+1 < len(roman_string) and val[roman_string[i]] < val[roman_string[i+1]]:
+            var -= val[roman_string[i]]
         else:
-            var += val[s[i]]
+            var += val[roman_string[i]]
     return var
