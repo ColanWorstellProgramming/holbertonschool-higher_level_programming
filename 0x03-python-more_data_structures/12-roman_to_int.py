@@ -5,6 +5,9 @@ def roman_to_int(roman_string):
     max = len(roman_string)
     x = ""
 
+    if (isinstance(roman_string, str) != True or roman_string == None):
+        return(0)
+
     for i in range(i, max):
         if (i < max):
             if (i+1 < max):
