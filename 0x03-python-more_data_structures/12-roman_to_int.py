@@ -5,9 +5,7 @@ def roman_to_int(roman_string):
     max = len(roman_string)
     x = ""
 
-    if (isinstance(roman_string, str) != True):
-        return(0)
-    if(roman_string == None):
+    if (isinstance(roman_string, str) != True or roman_string == None):
         return(0)
 
     while(i < max):
