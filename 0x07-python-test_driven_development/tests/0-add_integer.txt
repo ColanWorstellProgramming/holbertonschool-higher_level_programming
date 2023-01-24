@@ -30,6 +30,7 @@ Test 5 'matrix issue'
     Traceback (most recent call last):
         ...
     TypeError: a must be an interger
+
 Test 6 'negative
     >>> add_integer(-10, -15)
     -25
