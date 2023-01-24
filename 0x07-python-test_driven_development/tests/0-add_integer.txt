@@ -20,3 +20,9 @@ Test 2 'b is not an int'
 Test 3 'cast to int, cant be floats'
     >>> add_integer(1.4, 1.8)
     2
+
+Test 4 'single string value'
+    >>> add_integer('asdfsadf')
+    Traceback (most recent call last):
+        ...
+    TypeError: a must be an interger
