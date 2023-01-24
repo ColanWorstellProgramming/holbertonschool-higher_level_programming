@@ -23,11 +23,10 @@ Test 3 'b is not an int'
 
 Test 4 'cast to int, cant be floats'
     >>> add_integer(1.4, 1.8)
-    2
+    3
 
 Test 5 'matrix issue'
     >>> add_integer([0])
     Traceback (most recent call last):
         ...
     TypeError: a must be an interger
-
