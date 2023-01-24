@@ -39,7 +39,7 @@ Test 7 'boolean value'
     >>> add_integer(1, True)
     Traceback (most recent call last):
         ...
-    TypeError: a must be an integer
+    TypeError: b must be an integer
 
 Test 8 'no var passed'
     >>> add_integer()
