@@ -22,7 +22,7 @@ Test 3 'cast to int, cant be floats'
     2
 
 Test 4 'matrix issue'
-    >>> add_integer(None)
+    >>> add_integer(0)
     Traceback (most recent call last):
         ...
     TypeError: a must be an interger
