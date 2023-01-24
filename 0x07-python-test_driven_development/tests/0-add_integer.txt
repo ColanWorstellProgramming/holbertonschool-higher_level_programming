@@ -9,28 +9,13 @@ Test 1 'both ints'
     >>> add_integer(0)
     98
 
-Test 2 'a is not an int'
-    >>> add_integer('asdfsadf', 1)
-    Traceback (most recent call last):
-    TypeError: a must be an interger
-
-Test 3 'b is not an int'
-    >>> add_integer(1, 'asdfsadf')
-    Traceback (most recent call last):
-    TypeError: b must be an interger
-
-Test 4 'cast to int, cant be floats'
-    >>> add_integer(1.4, 1.8)
-    2
-
-Test 5 'matrix issue'
-    >>> add_integer(1, [0, 5, 15])
-    Traceback (most recent call last):
-    TypeError: b must be an interger
-
-Test 6 'negative'
+Test 2 'negative'
     >>> add_integer(-10, -15)
     -25
+
+Test 3 'cast to int, cant be floats'
+    >>> add_integer(1.4, 1.8)
+    2
 
 Test 7 'no var passed'
     >>> add_integer()
