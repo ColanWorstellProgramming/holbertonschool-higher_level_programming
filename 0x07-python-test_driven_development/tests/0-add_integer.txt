@@ -21,7 +21,7 @@ Test 3 'b is not an int'
 
 Test 4 'cast to int, cant be floats'
     >>> add_integer(1.4, 1.8)
-    3
+    2
 
 Test 5 'matrix issue'
     >>> add_integer(1, [0, 5, 15])
