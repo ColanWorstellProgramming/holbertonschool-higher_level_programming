@@ -17,6 +17,21 @@ Test 3 'cast to int, cant be floats'
     >>> add_integer(1.4, 1.8)
     2
 
+Test 4 'a is not an int'
+    >>> add_integer('asdfsadf', 1)
+    Traceback (most recent call last):
+    TypeError: a must be an interger
+
+Test 5 'b is not an int'
+    >>> add_integer(1, 'asdfsadf')
+    Traceback (most recent call last):
+    TypeError: b must be an interger
+
+Test 6 'matrix issue'
+    >>> add_integer(1, [0, 5, 15])
+    Traceback (most recent call last):
+    TypeError: b must be an interger
+
 Test 7 'no var passed'
     >>> add_integer()
     Traceback (most recent call last):
