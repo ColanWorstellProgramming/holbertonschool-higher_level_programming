@@ -46,3 +46,8 @@ Test 8 'no var passed'
     Traceback (most recent call last):
         ...
     TypeError: add_integer() missing 1 required positional argument: 'a'
+
+Test 9 '3 args'
+    >>> add_integer(1, 10, 15)
+    Traceback (most recent call last):
+    TypeError: add_integer() takes from 1 to 2 positional arguments but 3 were given
