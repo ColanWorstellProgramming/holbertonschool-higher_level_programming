@@ -35,8 +35,14 @@ Test 6 'negative'
     >>> add_integer(-10, -15)
     -25
 
-Testing 'boolean value'
+Test 7 'boolean value'
     >>> add_integer(1, True)
     Traceback (most recent call last):
         ...
     TypeError: a must be an integer
+
+Test 8 'no var passed'
+    >>> add_integer()
+    Traceback (most recent call last):
+        ...
+    TypeError: add_integer() missing 1 required positional argument: 'a'
