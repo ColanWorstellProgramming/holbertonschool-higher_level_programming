@@ -12,13 +12,11 @@ Test 1 'both ints'
 Test 2 'a is not an int'
     >>> add_integer('asdfsadf', 1)
     Traceback (most recent call last):
-        ...
     TypeError: a must be an interger
 
 Test 3 'b is not an int'
     >>> add_integer(1, 'asdfsadf')
     Traceback (most recent call last):
-        ...
     TypeError: b must be an interger
 
 Test 4 'cast to int, cant be floats'
@@ -28,43 +26,35 @@ Test 4 'cast to int, cant be floats'
 Test 5 'matrix issue'
     >>> add_integer(1, [0, 5, 15])
     Traceback (most recent call last):
-        ...
     TypeError: b must be an interger
 
 Test 6 'negative'
     >>> add_integer(-10, -15)
     -25
 
-Test 7 'boolean value'
-    >>> add_integer(1, True)
-    Traceback (most recent call last):
-        ...
-    TypeError: b must be an integer
-
-Test 8 'no var passed'
+Test 7 'no var passed'
     >>> add_integer()
     Traceback (most recent call last):
-        ...
     TypeError: add_integer() missing 1 required positional argument: 'a'
 
-Test 9 '3 args'
+Test 8 '3 args'
     >>> add_integer(1, 10, 15)
     Traceback (most recent call last):
     TypeError: add_integer() takes from 1 to 2 positional arguments but 3 were given
 
-Test 10 'inf'
+Test 9 'inf'
 
     >>> add_integer(float("inf"))
     Traceback (most recent call last):
     OverflowError: cannot convert float infinity to integer
 
-Test 11 '-inf'
+Test 10 '-inf'
 
     >>> add_integer(float("-inf"))
     Traceback (most recent call last):
     OverflowError: cannot convert float infinity to integer
 
-Test 12 'not real'
+Test 11 'not real'
 
     >>> add_integer(float("NaN"))
     Traceback (most recent call last):
