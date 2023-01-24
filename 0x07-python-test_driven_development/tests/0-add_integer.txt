@@ -51,3 +51,21 @@ Test 9 '3 args'
     >>> add_integer(1, 10, 15)
     Traceback (most recent call last):
     TypeError: add_integer() takes from 1 to 2 positional arguments but 3 were given
+
+Test 10 'inf'
+
+    >>> add_integer(float("inf"))
+    Traceback (most recent call last):
+    OverflowError: cannot convert float infinity to integer
+
+Test 11 '-inf'
+
+    >>> add_integer(float("-inf"))
+    Traceback (most recent call last):
+    OverflowError: cannot convert float infinity to integer
+
+Test 12 'not real'
+
+    >>> add_integer(float("NaN"))
+    Traceback (most recent call last):
+    ValueError: cannot convert float NaN to integer
