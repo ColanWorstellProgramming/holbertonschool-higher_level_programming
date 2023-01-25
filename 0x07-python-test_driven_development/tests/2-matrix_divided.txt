@@ -1,0 +1,14 @@
+Import function 'matrix_divided' for testing
+    >>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+
+Test 0 'int as matrix'
+    >>> matrix_divided([[10, 6], [4, 2]], 2)
+    [[5.0, 3.0], [2.0, 1.0]]
+
+Test 1 'float as matrix'
+    >>> matrix_divided([[10.0, 6.0], [4.0, 2.0]], 2)
+    [[5.0, 3.0], [2.0, 1.0]]
+
+Test 2 'float and int as matrix'
+    >>> matrix_divided([[10.0, 6], [4, 2.0]], 2)
+    [[5.0, 3.0], [2.0, 1.0]]
