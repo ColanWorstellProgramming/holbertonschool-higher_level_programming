@@ -23,3 +23,8 @@ Test 4 'second is int'
     >>> say_my_name('hi', 93)
     Traceback (most recent call last):
     TypeError: last_name must be a string
+
+Test 5 '3 things'
+    >>> say_my_name('hi', 'hey', 'hello')
+    Traceback (most recent call last):
+    TypeError: say_my_name() takes from 1 to 2 positional arguments but 3 were given
