@@ -15,3 +15,8 @@ Test 2 'nothing'
     >>> text_indentation()
     Traceback (most recent call last):
     TypeError: text_indentation() missing 1 required positional argument: 'text'
+
+Test 2 'int'
+    >>> text_indentation(46)
+    Traceback (most recent call last):
+    TypeError: text must be a string
