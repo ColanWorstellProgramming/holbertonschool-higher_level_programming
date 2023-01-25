@@ -8,7 +8,7 @@ def matrix_divided(matrix, div):
         if (len(row) is not (len(matrix[0]))):
             raise TypeError('Each row of the matrix must have the same size')
 
-    if (not isinstance(div, float) or not isinstance(div, int)):
+    if (not isinstance(div, (int, float))):
         raise TypeError('div must be a number')
 
     if (div == 0):
@@ -16,8 +16,7 @@ def matrix_divided(matrix, div):
 
     for a in matrix:
         for b in a:
-            if (not isinstance(a, int) and not isinstance(a, float)):
+            if (type(b) is not int and type(b) is not float):
                 raise TypeError('matrix must be a matrix (list of lists) of integers/floats')
-            else:
-                mat[x] = round(a/div, 2)
-    return (mat)
+
+    return [[round(b/div, 2) for b in a] for a in matrix]
