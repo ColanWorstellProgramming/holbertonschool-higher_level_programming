@@ -7,7 +7,7 @@ Test 0 'first name'
 
 Test 1 'both names'
     >>> say_my_name('hello hi')
-    My name is hello hi 
+    My name is hello hi
 
 Test 2 'no names'
     >>> say_my_name(None)
