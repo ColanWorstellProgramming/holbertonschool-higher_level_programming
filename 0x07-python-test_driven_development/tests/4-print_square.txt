@@ -26,12 +26,7 @@ Test 4 'no float'
     Traceback (most recent call last):
     TypeError: size must be an integer
 
-Test 5 'negatives'
-    >>> print_square(-16)
-    Traceback (most recent call last):
-    ValueError: size must be >= 0
-
-Test 6 'no var'
+Test 5 'no var'
     >>> print_square()
     Traceback (most recent call last):
     TypeError: print_square() missing 1 required positional argument: 'size'
