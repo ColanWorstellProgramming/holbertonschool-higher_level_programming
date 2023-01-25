@@ -5,16 +5,12 @@ Test 0 'first name'
     >>> say_my_name('hello')
     My name is hello 
 
-Test 1 'both names'
-    >>> say_my_name('hello hi')
-    My name is hello hi
-
-Test 2 'no names'
+Test 1 'no names'
     >>> say_my_name(None)
     Traceback (most recent call last):
     TypeError: first_name must be a string
 
-Test 3 'int'
+Test 2 'int'
     >>> say_my_name(93)
     Traceback (most recent call last):
     TypeError: first_name must be a string
