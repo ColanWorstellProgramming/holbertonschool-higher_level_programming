@@ -18,6 +18,6 @@ def matrix_divided(matrix, div):
         for b in a:
             if (type(b) is not int and type(b) is not float):
                 raise TypeError('matrix must be a matrix (list of lists) of'
-                ' integers/floats')
+                                ' integers/floats')
 
     return [[round(b/div, 2) for b in a] for a in matrix]
