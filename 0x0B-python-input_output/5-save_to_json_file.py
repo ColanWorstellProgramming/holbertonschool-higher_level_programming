@@ -3,6 +3,7 @@
 import json
 
 
-def to_json_string(my_obj):
+def to_json_string(my_obj, filename):
     """json"""
-    return json.loads(my_obj)
+    with open(filename, 'w') as f:
+        json.dump(my_obj, f)
