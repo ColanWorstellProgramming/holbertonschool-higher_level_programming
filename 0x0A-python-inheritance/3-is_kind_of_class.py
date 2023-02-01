@@ -4,7 +4,7 @@
 
 def is_kind_of_class(obj, a_class):
     """kind of function"""
-    if (a_class is isinstance(obj)):
+    if (a_class == isinstance(obj)):
         return True
     else:
         return False
