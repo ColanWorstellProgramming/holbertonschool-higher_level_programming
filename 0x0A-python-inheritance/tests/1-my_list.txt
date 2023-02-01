@@ -12,14 +12,14 @@ Test 1 'empty list'
 
 Test 2 'inheritence'
     >>> thislist = MyList()
-    >>> thislist.append('x')
     >>> thislist.append('y')
+    >>> thislist.append('x')
     >>> print(thislist)
-    ['x', 'y']
+    ['y', 'x']
     >>> thislist.print_sorted()
     ['x', 'y']
     >>> print(thislist)
-    ['x', 'y']
+    ['y', 'x']
 
 Test 3 'correct type of list'
     >>> thislist = MyList()
@@ -29,7 +29,7 @@ Test 3 'correct type of list'
     <bound method MyList.print_sorted of []>
 
 Test 4 'no args'
-    >>> MyList([8, 6, 7]).print_sorted('n')
+    >>> MyList([8, 6, 7]).print_sorted('x')
     Traceback (most recent call last):
     TypeError: print_sorted() takes 1 positional argument but 2 were given
 
