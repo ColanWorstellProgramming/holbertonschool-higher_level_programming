@@ -3,6 +3,7 @@
 
 
 def pascal_triangle(n):
+    """tri function"""
     result = []
     for x in range(n):
         if x == 0:
