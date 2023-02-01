@@ -79,3 +79,10 @@ class Rectangle(Base):
         tangle += (' ' * self.x + '#' * self.width + '\n') * self.height
         tangle = tangle[:-1]
         print(tangle)
+
+    def __str__(self):
+        """str"""
+        tangles = "[Rectangle] " + "({}) ".format(self.id)
+        tangles = tangles + "{}/{} - ".format(self.x, self.y)
+        tangles = tangles + "{}/{}".format(self.width, self.height)
+        return (tangles)
