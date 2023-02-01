@@ -63,5 +63,5 @@ Test 10 'negative element'
     >>> thislist.append(1)
     >>> thislist.append(-6)
     >>> thislist.append(10)
-    >>> print(thislist)
+    >>> thislist.print_sorted()
     [-6, 1, 10]
