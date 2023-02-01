@@ -2,6 +2,7 @@
 """base file"""
 import json
 
+
 class Base:
     """base class"""
     __nb_objects = 0
