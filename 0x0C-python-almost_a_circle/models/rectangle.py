@@ -88,16 +88,22 @@ class Rectangle(Base):
         return (tangles)
 
     def update(self, *args, **kwargs):
-        """update"""
-        if args:
-            attrs = ["id", "width", "height", "x", "y"]
-            for ii in range(len(args)):
-                setattr(self, attrs[ii], args[ii])
-        for ky, vl in kwargs.items():
-            setattr(self, ky, vl)
+        """Updates"""
+        if (args is None or args == ()) and kwargs is not None:
+            args = [kwargs.get("id"), kwargs.get("width"),
+                    kwargs.get("height"), kwargs.get("x"),
+                    kwargs.get("y")]
+        try:
+            self.id = args[0] or self.id
+            self.width = args[1] or self.width
+            self.height = args[2] or self.height
+            self.x = args[3] or self.x
+            self.y = args[4] or self.y
+        except IndexError:
+            return
 
     def to_dictionary(self):
         """moby"""
-        moby = {"width": self.width,
+        moby = {"id": self.id, "width": self.width,
                 "height": self.height, "x": self.x, "y": self.y}
         return moby

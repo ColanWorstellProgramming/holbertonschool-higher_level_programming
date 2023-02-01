@@ -27,14 +27,17 @@ class Square(Rectangle):
         return (tangles)
 
     def update(self, *args, **kwargs):
-        """update"""
-        if args:
-            attrs = ["id", "size", "x", "y"]
-            for ii in range(len(args)):
-                setattr(self, attrs[ii], args[ii])
-        else:
-            for ky, vl in kwargs.items():
-                setattr(self, ky, vl)
+        """Quick Update"""
+        if (args is None or args == ()) and kwargs is not None:
+            args = [kwargs.get("id"), kwargs.get("size"), kwargs.get("x"),
+                    kwargs.get("y")]
+        try:
+            self.id = args[0] or self.id
+            self.size = args[1] or self.size
+            self.x = args[2] or self.x
+            self.y = args[3] or self.y
+        except IndexError:
+            return
 
     def to_dictionary(self):
         """moby"""
