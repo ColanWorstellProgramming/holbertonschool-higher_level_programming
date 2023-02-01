@@ -73,3 +73,7 @@ Test 10 'repeated element'
     >>> thislist.append(2)
     >>> print(thislist)
     [1, 1, 2]
+
+Test 11 'bool'
+    >>> thislist = MyList()
+    >>> thislist.append(True)
