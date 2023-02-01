@@ -82,4 +82,4 @@ Test 11 'bool'
 
 Test 12 'correct order'
     >>> MyList(["a", "b!", "c"]).print_sorted()
-['a', 'c', 'b!']
+    ['a', 'b!', 'c']
