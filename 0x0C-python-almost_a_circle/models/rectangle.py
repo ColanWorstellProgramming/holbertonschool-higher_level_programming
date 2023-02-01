@@ -87,9 +87,11 @@ class Rectangle(Base):
         tangles = tangles + "{}/{}".format(self.width, self.height)
         return (tangles)
 
-    def update(self, *args):
-        """updates"""
+    def update(self, *args, **kwargs):
+        """update"""
         if args:
             attrs = ["id", "width", "height", "x", "y"]
             for ii in range(len(args)):
                 setattr(self, attrs[ii], args[ii])
+        for ky, vl in kwargs.items():
+            setattr(self, ky, vl)
