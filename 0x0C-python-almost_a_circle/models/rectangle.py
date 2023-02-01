@@ -95,9 +95,3 @@ class Rectangle(Base):
                 setattr(self, attrs[ii], args[ii])
         for ky, vl in kwargs.items():
             setattr(self, ky, vl)
-
-    def to_dictionary(self):
-        """moby"""
-        moby = {"x": self.x, "y": self.y, "id": self.id, "height": self.height,
-                "width": self.width}
-        return moby
