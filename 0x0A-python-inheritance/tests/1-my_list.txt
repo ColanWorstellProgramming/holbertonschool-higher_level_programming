@@ -79,3 +79,7 @@ Test 11 'bool'
     >>> thislist.append(True)
     >>> thislist.print_sorted()
     [True]
+
+Test 12 'correct order'
+    >>> MyList(["a", "b!", "c"]).print_sorted()
+['a', 'c', 'b!']
