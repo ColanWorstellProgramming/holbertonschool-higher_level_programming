@@ -25,3 +25,13 @@ class Square(Rectangle):
         tangles = tangles + "{}/{} - ".format(self.x, self.y)
         tangles = tangles + "{}".format(self.width)
         return (tangles)
+
+    def update(self, *args, **kwargs):
+        """update"""
+        if args:
+            attrs = ["id", "size", "x", "y"]
+            for ii in range(len(args)):
+                setattr(self, attrs[ii], args[ii])
+        else:
+            for ky, vl in kwargs.items():
+                setattr(self, ky, vl)
