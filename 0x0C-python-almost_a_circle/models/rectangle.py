@@ -87,6 +87,12 @@ class Rectangle(Base):
         tangles = tangles + "{}/{}".format(self.width, self.height)
         return (tangles)
 
+    def to_dictionary(self):
+        """moby"""
+        moby = {"id": self.id, "width": self.width,
+                "height": self.height, "x": self.x, "y": self.y}
+        return moby
+
     def update(self, *args, **kwargs):
         """update"""
         if args:
@@ -95,9 +101,3 @@ class Rectangle(Base):
                 setattr(self, attrs[ii], args[ii])
         for ky, vl in kwargs.items():
             setattr(self, ky, vl)
-
-    def to_dictionary(self):
-        """moby"""
-        moby = {"id": self.id, "width": self.width,
-                "height": self.height, "x": self.x, "y": self.y}
-        return (moby)
