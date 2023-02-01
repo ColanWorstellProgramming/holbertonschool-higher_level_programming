@@ -88,13 +88,42 @@ class Rectangle(Base):
         return (tangles)
 
     def update(self, *args, **kwargs):
-        """update"""
-        if args:
-            attrs = ["id", "width", "height", "x", "y"]
-            for ii in range(len(args)):
-                setattr(self, attrs[ii], args[ii])
-        for ky, vl in kwargs.items():
-            setattr(self, ky, vl)
+        """
+        Assigns a key:value argument to each attribute
+        """
+        if args is not None and len(args) != 0:
+            if len(args) == 1:
+                self.id = args[0]
+            if len(args) == 2:
+                self.id = args[0]
+                self.width = args[1]
+            if len(args) == 3:
+                self.id = args[0]
+                self.width = args[1]
+                self.height = args[2]
+            if len(args) == 4:
+                self.id = args[0]
+                self.width = args[1]
+                self.height = args[2]
+                self.x = args[3]
+            if len(args) == 5:
+                self.id = args[0]
+                self.width = args[1]
+                self.height = args[2]
+                self.x = args[3]
+                self.y = args[4]
+
+        for key, value in kwargs.items():
+            if key == "id":
+                self.id = kwargs['id']
+            if key == "width":
+                self.width = kwargs['width']
+            if key == "height":
+                self.height = kwargs['height']
+            if key == "x":
+                self.x = kwargs['x']
+            if key == "y":
+                self.y = kwargs['y']
 
     def to_dictionary(self):
         """moby"""
