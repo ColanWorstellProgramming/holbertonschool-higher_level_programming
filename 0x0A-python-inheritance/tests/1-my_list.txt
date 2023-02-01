@@ -51,3 +51,7 @@ Test 7 'cant be none'
 Test 8 'dictonarys'
     >>> MyList({"moby": 1, "dict": 2}).print_sorted()
     ['dict', 'moby']
+
+Test 9 'documentation'
+    >>> len(__import__('1-my_list').__doc__) > 1
+    True
