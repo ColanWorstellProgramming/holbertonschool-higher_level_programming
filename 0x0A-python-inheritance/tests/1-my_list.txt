@@ -65,3 +65,11 @@ Test 10 'negative element'
     >>> thislist.append(10)
     >>> thislist.print_sorted()
     [-6, 1, 10]
+
+Test 10 'repeated element'
+    >>> thislist = MyList()
+    >>> thislist.append(1)
+    >>> thislist.append(1)
+    >>> thislist.append(2)
+    >>> print(thislist)
+    [1, 1, 2]
