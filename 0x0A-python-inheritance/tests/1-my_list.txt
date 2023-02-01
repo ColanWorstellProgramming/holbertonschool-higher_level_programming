@@ -57,3 +57,11 @@ Test 9 'one element'
     >>> thislist.append(1)
     >>> print(thislist)
     [1]
+
+Test 10 'negative element'
+    >>> thislist = MyList()
+    >>> thislist.append(1)
+    >>> thislist.append(-6)
+    >>> thislist.append(10)
+    >>> print(thislist)
+    [-6, 1, 10]
