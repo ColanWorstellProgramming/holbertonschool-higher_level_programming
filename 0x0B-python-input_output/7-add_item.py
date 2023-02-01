@@ -6,7 +6,7 @@ load = __import__('6-load_from_json_file').load_from_json_file
 
 
 if __name__ == "__main__":
-    """pretty neat"""
+    """compare"""
     try:
         load_this = load("add_item.json")
     except FileNotFoundError:
