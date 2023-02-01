@@ -55,7 +55,7 @@ Test 8 'dictonarys'
 Test 9 'one element'
     >>> thislist = MyList()
     >>> thislist.append(1)
-    >>> print(thislist)
+    >>> thislist.print_sorted()
     [1]
 
 Test 10 'negative element'
@@ -71,7 +71,7 @@ Test 10 'repeated element'
     >>> thislist.append(1)
     >>> thislist.append(1)
     >>> thislist.append(2)
-    >>> print(thislist)
+    >>> thislist.print_sorted()
     [1, 1, 2]
 
 Test 11 'bool'
