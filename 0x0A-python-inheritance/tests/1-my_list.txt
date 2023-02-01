@@ -52,6 +52,8 @@ Test 8 'dictonarys'
     >>> MyList({"moby": 1, "dict": 2}).print_sorted()
     ['dict', 'moby']
 
-Test 9 'documentation'
-    >>> len(__import__('1-my_list').__doc__) > 1
-    True
+Test 9 'one element'
+    >>> thislist = MyList()
+    >>> thislist.append(1)
+    >>> print(thislist)
+    [1]
