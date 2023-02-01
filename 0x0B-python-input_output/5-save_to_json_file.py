@@ -3,7 +3,7 @@
 import json
 
 
-def to_json_string(my_obj, filename):
+def save_to_json_string(my_obj, filename):
     """json"""
     with open(filename, 'w') as f:
         json.dump(my_obj, f)
