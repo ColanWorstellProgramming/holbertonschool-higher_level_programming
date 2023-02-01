@@ -98,6 +98,6 @@ class Rectangle(Base):
 
     def to_dictionary(self):
         """moby"""
-        moby = {"id": self.id, "width": self.width,
+        moby = {"width": self.width,
                 "height": self.height, "x": self.x, "y": self.y}
         return moby
