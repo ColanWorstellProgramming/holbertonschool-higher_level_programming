@@ -77,4 +77,5 @@ Test 10 'repeated element'
 Test 11 'bool'
     >>> thislist = MyList()
     >>> thislist.append(True)
-    >>> print(thislist)
+    >>> thislist.print_sorted()
+    [True]
