@@ -3,4 +3,6 @@
 
 
 class BaseGeometry:
-    pass
+    """class notes"""
+    def area(self):
+        raise Exception('area() is not implemented')
