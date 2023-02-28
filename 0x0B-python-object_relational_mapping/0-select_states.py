@@ -11,5 +11,8 @@ def selectstate():
     for x in y:
         print(x)
 
+    cur.close()
+    db.close()
+
 if __name__ == "__main__":
     selectstate()
