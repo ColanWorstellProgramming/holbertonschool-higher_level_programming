@@ -10,7 +10,7 @@ def selectNstate():
                          user=sys.argv[1], passwd=sys.argv[2], db=sys.argv[3])
     cur = db.cursor()
 
-    state = sys.argv(4)
+    state = sys.argv[4]
 
     cur.execute("SELECT * FROM states WHERE name \
                 LIKE BINARY %(name)s", {'name': state})
