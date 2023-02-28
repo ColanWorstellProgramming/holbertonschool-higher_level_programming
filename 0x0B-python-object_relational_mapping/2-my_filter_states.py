@@ -13,7 +13,7 @@ def selectNstate():
                 LIKE BINARY'{}'".format(sys.argv[4]))
     y = cur.fetchall()
     for x in y:
-        print(y)
+        print(x)
 
     cur.close()
     db.close()
