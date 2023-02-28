@@ -12,8 +12,7 @@ def selectNstate():
     cur.execute("SELECT * FROM states WHERE name \
                 LIKE BINARY'{}'".format(sys.argv[4]))
     y = cur.fetchall()
-    for x in y:
-        print(x)
+    print(y)
 
     cur.close()
     db.close()
