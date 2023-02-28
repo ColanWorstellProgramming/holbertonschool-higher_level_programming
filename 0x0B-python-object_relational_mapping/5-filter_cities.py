@@ -18,5 +18,6 @@ def selectNstate():
     cur.close()
     db.close()
 
+
 if __name__ == "__main__":
     selectNstate()
