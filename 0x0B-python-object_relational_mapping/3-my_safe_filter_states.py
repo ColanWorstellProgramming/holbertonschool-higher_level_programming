@@ -12,11 +12,11 @@ def selectNstate():
 
     state = sys.argv[4]
 
-    cur.execute("SELECT * FROM states WHERE name \
+    cur.execute("SELECT * FROM states WHERE name\
                 LIKE BINARY %(name)s", {'name': state})
     y = cur.fetchall()
     if y is None:
-        return  False
+        return False
     for x in y:
         print(x)
 
