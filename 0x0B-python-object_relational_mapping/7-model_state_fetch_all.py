@@ -1,23 +1,18 @@
 #!/usr/bin/python3
-"""connect to MySQLdb"""
-import MySQLdb
+"""alchemy"""
 import sys
-
-
-def selectNstate():
-    """SQL Selection Function"""
-    db = MySQLdb.connect(host='localhost', port=3306,
-                         user=sys.argv[1], passwd=sys.argv[2], db=sys.argv[3])
-    cur = db.cursor()
-    cur.execute("SELECT * FROM cities INNER JOIN states ON cities.state_id = \
-                states.id ORDER BY cities.id")
-
-    city_list = [city[2] for city in cur.fetchall() if city[4] == sys.argv[4]]
-    print(", ".join(city_list))
-
-    cur.close()
-    db.close()
+from sqlalchemy import create_engine
+from model_state import State
+from sqlalchemy.orm import sessionmaker
 
 
 if __name__ == "__main__":
-    selectNstate()
+    engine = create_engine('mysql+mysqldb://{}:{}@localhost/{}'
+                           .format(sys.argv[1], sys.argv[2], sys.argv[3]),
+                           pool_pre_ping=True)
+
+    Session = sessionmaker(bind=engine)
+    session = Session()
+
+    for state in session.query(State).order_by(State.id):
+        print("{}: {}".format(state.id, state.name))
