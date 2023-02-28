@@ -16,8 +16,13 @@ if __name__ == "__main__":
 
     check = False
     for state in session.query(State):
-        if sys.argv[4] == state.name:
+        if state.name == "Louisiana":
             check = True
-            print("{}".format(state.id))
-    if not check:
-        print("Not found")
+            break
+    if check:
+        print("LA already exists in db")
+    else:
+        LA = State(name="Louisiana")
+        session.add(LA)
+        session.commit()
+        print(LA.id)
