@@ -14,13 +14,9 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=engine)
     session = Session()
 
-    check = False
     for state in session.query(State):
         if state.name == "Louisiana":
-            check = True
             break
-    if check:
-        print("LA already exists in db")
     else:
         LA = State(name="Louisiana")
         session.add(LA)
