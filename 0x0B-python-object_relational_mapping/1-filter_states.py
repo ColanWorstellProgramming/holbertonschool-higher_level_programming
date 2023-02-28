@@ -9,7 +9,7 @@ def selectNstate():
     db = MySQLdb.connect(host='localhost', port=3306,
                          user=sys.argv[1], passwd=sys.argv[2], db=sys.argv[3])
     cur = db.cursor()
-    cur.execute("SELECT * FROM states WHERE LEFT(name, 1) LIKE '^N'")
+    cur.execute("SELECT * FROM states WHERE LEFT(name, 1) LIKE UPPER(n)")
     y = cur.fetchall()
     for x in y:
         print(x)
