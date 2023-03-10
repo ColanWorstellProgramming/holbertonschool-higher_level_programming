@@ -12,7 +12,7 @@ if __name__ == "__main__":
 
     bef = requests.post(req, data={'q': q})
     try:
-        moby = req.json()
+        moby = bef.json()
         id = moby.get('id')
         name = moby.get('name')
         if len(moby) == 0:
