@@ -6,5 +6,4 @@ import sys
 
 if __name__ == "__main__":
     req = requests.get(sys.argv[1])
-    print(req.get['X-Request-Id'])
-
+    print(requests.get['X-Request-Id'])
