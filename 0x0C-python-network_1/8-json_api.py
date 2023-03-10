@@ -6,7 +6,7 @@ import sys
 if __name__ == "__main__":
     req = 'http://0.0.0.0:5000/search_user'
     if len(sys.argv) == 1:
-        q = ''
+        q = ""
     else:
         q = sys.argv[1]
 
@@ -19,5 +19,5 @@ if __name__ == "__main__":
             print("No result")
         else:
             print("[{}] {}".format(id, name))
-    except Exception as e:
+    except Exception as err:
         print("Not a valid JSON")
